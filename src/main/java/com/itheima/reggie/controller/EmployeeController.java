@@ -6,6 +6,7 @@ import com.itheima.reggie.entity.Employee;
 import com.itheima.reggie.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
