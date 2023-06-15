@@ -30,3 +30,12 @@ Mybatis Plus公共字段自动填充，也就是在插入或者更新的时候�
 
 # ThreadLocal方法
 线程隔离，将线程里面的局部变量进行存储或读取
+
+# 文件上传
+- method = “post” // 采用post提交数据
+- enctype = "multipart/form-data" // 采用multipart格式上传文件
+- type = "file"  // 使用input的file控件上传
+
+# @Transactional 事务注解
+@Transactional注解在代码执行出错的时候能够进行事务的回滚。如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。
+涉及多表操作的，都需要事物注解，保持事物一致性，成功一起插入，失败一起报错
