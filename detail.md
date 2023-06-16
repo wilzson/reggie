@@ -39,3 +39,18 @@ Mybatis Plus公共字段自动填充，也就是在插入或者更新的时候�
 # @Transactional 事务注解
 @Transactional注解在代码执行出错的时候能够进行事务的回滚。如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。
 涉及多表操作的，都需要事物注解，保持事物一致性，成功一起插入，失败一起报错
+
+# Linux 
+## find查找命令
+find dirName -option fileName
+- find . -name "*.java" 在当前目录及其子目录下查找.java结尾的文件
+
+## grep查找命令
+
+## more
+类似于cat，分页查询文件的内容
+
+# Linux自动部署
+1. yum install git
+2. git clone ....
+3. 安装maven
