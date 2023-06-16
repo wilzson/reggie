@@ -3,6 +3,18 @@ server:
 spring:
   application:
     name: reggie_take_out
+  #redis相关配置
+  redis:
+    host: 43.155.60.36
+    port: 6379
+    database: 0
+    jedis:
+      #Redis连接池配置
+      pool:
+        max-active: 8
+        max-wait: 1ms
+        max-idle: 4
+        min-idle: 0
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
